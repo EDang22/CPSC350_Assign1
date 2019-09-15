@@ -79,7 +79,7 @@ void Assign1::run(string text)
     return;
   }
   mean = sum / numStrings;
-  variance = (sumS / numStrings) - mean;
+  variance = (sumS / numStrings) - (mean * mean);
   stdDev = sqrt(variance);
   calcProbability();
   startFile();
